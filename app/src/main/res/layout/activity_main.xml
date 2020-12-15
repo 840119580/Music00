@@ -11,9 +11,9 @@
         android:id="@+id/Music_Title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/Title_text"
+        android:text="音乐播放器"
         android:gravity="center"
-        android:background="#E82D2D"
+        android:background="#86D6D5"
         android:textColor="#fff"/>
     <ListView
         android:id="@+id/Music_View"

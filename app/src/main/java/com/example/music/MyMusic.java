@@ -132,7 +132,7 @@ public class MyMusic extends AppCompatActivity implements View.OnClickListener {
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     private void initAnimator() {
         mAnimator = ObjectAnimator.ofFloat(image, "rotation", 0.0f, 360.0f);
-        mAnimator.setDuration(3000);//设定转一圈的时间
+        mAnimator.setDuration(6000);//设定转一圈的时间
         mAnimator.setRepeatCount(Animation.INFINITE);//设定无限循环
         mAnimator.setRepeatMode(ObjectAnimator.RESTART);// 循环模式
         mAnimator.setInterpolator(new LinearInterpolator());// 匀速
@@ -140,7 +140,7 @@ public class MyMusic extends AppCompatActivity implements View.OnClickListener {
         mAnimator.pause();//动画暂停
     }
 
-    public class MySeekBar implements SeekBar.OnSeekBarChangeListener {
+    public class MySeekBar implements SeekBar.OnSeekBarChangeListener {//进度条
 
         public void onProgressChanged(SeekBar seekBar, int progress,
                                       boolean fromUser) {
